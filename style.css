@@ -1,0 +1,49 @@
+body{
+    background-image: url("./images/backGround.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#paper{
+    background-image: url("./images/paper.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    width: 25%;
+    height: 60vh;
+    margin-top: 25vh;
+    margin-right: 5%;
+    padding: 2%;
+}
+
+
+
+#wheelOfFortune{
+    position: absolute;
+    width: 30%;
+    top: 35%;
+    left: 12%;
+}
+
+#backGroundWheel{
+    position: absolute;
+    width: 37%;
+    top: 28%;
+    left: 8.5%;
+}
+
+#sign{
+    display: block;
+    position: absolute;
+    width: 33%;
+    margin-left: 33%;
+    
+}
+
+#arrow{
+    z-index: 1;
+    position: absolute;
+    left: 41%;
+    top: 63%;
+    width: 10%;
+
+}
