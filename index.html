@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header id="sign">
         <img src="./images/sign.svg" alt="sign">
@@ -14,20 +16,37 @@
     <img id="arrow" onclick="spinObject.startSpin(spinObject.randomDegre());" src="./images/spin.svg" alt="arrow">
     <img id="backGroundWheel" src="./images/backGroundWheel.svg" alt="backGroundWheel">
     <img id="wheelOfFortune" src="./images/wheelOfFortune.svg" alt="Wheel of fortune">
-    <!-- <img src="./images/backGround.svg" alt=""> -->
-    <div id="paper">
-        <div id= "paperContent">
-            
-        </div>
-        
-        <div>Checkboxdiv</div>
-    </div>
 
+    <div id="paper">
+        <div id="paperContent">
+
+        </div>
+
+        <div>
+
+            <input id="radio1" onclick="radioButtons.clickRaidoButtonA()" type="radio" name="answer" value="a">
+            <em id="radioContent1"></em> <br>
+            <input id="radio2" onclick="radioButtons.clickRaidoButtonB()" type="radio" name="answer" value="b">
+            <em id="radioContent2"></em><br>
+            <input id="radio3" onclick="radioButtons.clickRaidoButtonC()" type="radio" name="answer" value="c">
+            <em id="radioContent3"></em><br>
+            <Button onclick="radioButtons.submit()">Submit</Button>
+
+        </div>
+    </div>
+    <script src="radioButtons.js"></script>
+    <script src="questions/freeForAll.js"></script>
+    <script src="questions/functionsIfElse.js"></script>
+    <script src="questions/ifElse.js"></script>
+    <script src="questions/objectMethods.js"></script>
+    <script src="questions/objects.js"></script>
+    <script src="questions/objectsFunctionsIfElse.js"></script>
+    <script src="questions/simpleFunction.js"></script>
+    <script src="questions/trusyFalsy.js"></script>
 
     <script src="questions.js"></script>
     <script src="spinObject.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
-
-

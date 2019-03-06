@@ -70,7 +70,7 @@ spinObject = {
                         "./images/backGroundWheel2.svg";
                 }
 
-                if (spinObject.i > 250) {
+                if (spinObject.i > 250 + randomDegre / 4) {
                     clearInterval(maxSpeed);
                     //second speed of the wheel
                     let midSpeed = setInterval(() => {
@@ -90,7 +90,7 @@ spinObject = {
 
                         spinObject.i += 1;
 
-                        if (spinObject.i > 750) {
+                        if (spinObject.i > 750 + randomDegre / 4) {
                             clearInterval(midSpeed);
                             //third speed of the wheel
                             let midSlowSpeed = setInterval(() => {
@@ -110,7 +110,7 @@ spinObject = {
                                 ).style.transform = `rotate(${spinObject.i}deg)`;
                                 spinObject.i += 1;
 
-                                if (spinObject.i > 1000) {
+                                if (spinObject.i > 1000 + randomDegre / 4) {
                                     clearInterval(midSlowSpeed);
                                     //Fourth and slowest speed of the wheel
                                     let SlowSpeed = setInterval(() => {
@@ -131,7 +131,7 @@ spinObject = {
                                         ).style.transform = `rotate(${spinObject.i}deg)`;
                                         spinObject.i += 1;
 
-                                        if (spinObject.i > 1250 + randomDegre) {
+                                        if (spinObject.i > 1250 + randomDegre / 4) {
                                             clearInterval(SlowSpeed);
                                             spinObject.getSubject(spinObject.i);
 
