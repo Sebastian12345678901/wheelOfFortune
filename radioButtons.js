@@ -12,9 +12,14 @@ let radioButtons = {
         document.getElementById("radio1").checked = true;
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = false;
+        document.getElementById("container1").style.backgroundImage = 'url("./images/checked.svg")';
+        document.getElementById("container2").style.backgroundImage = 'url("./images/unchecked.svg")';
+        document.getElementById("container3").style.backgroundImage = 'url("./images/unchecked.svg")';
         console.log(this.abc[0]);
         console.log(this.abc[1]);
         console.log(this.abc[2]);
+
+
     },
 
     clickRaidoButtonB: function () {
@@ -22,6 +27,9 @@ let radioButtons = {
         document.getElementById("radio1").checked = false;
         document.getElementById("radio2").checked = true;
         document.getElementById("radio3").checked = false;
+        document.getElementById("container1").style.backgroundImage = 'url("./images/unchecked.svg")';
+        document.getElementById("container2").style.backgroundImage = 'url("./images/checked.svg")';
+        document.getElementById("container3").style.backgroundImage = 'url("./images/unchecked.svg")';
         console.log(this.abc[0]);
         console.log(this.abc[1]);
         console.log(this.abc[2]);
@@ -32,6 +40,9 @@ let radioButtons = {
         document.getElementById("radio1").checked = false;
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = true;
+        document.getElementById("container1").style.backgroundImage = 'url("./images/unchecked.svg")';
+        document.getElementById("container2").style.backgroundImage = 'url("./images/unchecked.svg")';
+        document.getElementById("container3").style.backgroundImage = 'url("./images/checked.svg")';
         console.log(this.abc[0]);
         console.log(this.abc[1]);
         console.log(this.abc[2]);
@@ -39,6 +50,7 @@ let radioButtons = {
 
 
     submit: function () {
+        //counter is for counting how many evaluations that are true.
         let counter = 0;
         if (questions.i === 2) {
             for (let i = 0; i <= 2; i++) {

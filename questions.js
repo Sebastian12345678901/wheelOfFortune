@@ -4,8 +4,8 @@ let questions = {
         if (subject == "free-for-all") {
             this.subject.innerHTML = `<h1>Subject: Free for all!</h1>`;
             document.getElementById("link").href = "https://www.w3schools.com/js/default.asp";
-
             this.freeForAllF();
+
         } else if (subject == "functions-IfElse") {
             this.subject.innerHTML = `<h1>Subject: Functions & if else!</h1>`;
             document.getElementById("link").href = "https://www.w3schools.com/js/js_if_else.asp";
@@ -45,14 +45,22 @@ let questions = {
     },
 
     //gör varje element i arrayen till ett objekt med frågan 
-
+    // I keeps track of wich question is currently beeing asked.
     i: 0,
     correctAnswer: [],
     unCheckRadio: () => {
         document.getElementById("radio1").checked = false;
         document.getElementById("radio2").checked = false;
         document.getElementById("radio3").checked = false;
+        document.getElementById("container1").style.backgroundImage = 'url("./images/unchecked.svg")';
+        document.getElementById("container2").style.backgroundImage = 'url("./images/unchecked.svg")';
+        document.getElementById("container3").style.backgroundImage = 'url("./images/unchecked.svg")';
 
+        if (spinObject.subject === "free-for-all") {
+            document.getElementById("paper").style.fontSize = "0.28em";
+        } else {
+            document.getElementById("paper").style.fontSize = "0.3em";
+        }
     },
 
 

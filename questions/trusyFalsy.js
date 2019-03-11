@@ -58,43 +58,45 @@ let trusyFalsy = [
       ////-----------------------------------------
 
    ],
-   [
-      `if (null == true) {<br>
-     &ensp; console.log("true");<br>
-   } else {<br>
-   &ensp; console.log("false");<br>
-   }`,
-      () => {
-         radioButtons.setRadioButton("true", "false", "else")
-      },
-      [false, true, false]
 
-      // if (null == true) {
-      //     console.log("true");
-      // } else {
-      //        //false
-      //     console.log("false");
-      // }
-      ////------------------------------------------
+   //Några extra frågor...
+   // [
+   //    `if (null == true) {<br>
+   //   &ensp; console.log("true");<br>
+   // } else {<br>
+   // &ensp; console.log("false");<br>
+   // }`,
+   //    () => {
+   //       radioButtons.setRadioButton("true", "false", "else")
+   //    },
+   //    [false, true, false]
 
-   ],
-   [
-      `if (null == undefined) {<br>
-    &ensp; console.log("true");<br>
-   } else {<br>
-    &ensp; console.log("false");<br>
-   }`,
-      () => {
-         radioButtons.setRadioButton("true", "false", "else")
-      },
-      [true, false, false]
-      // if (null == undefined) {
-      //     //true
-      //     console.log("true");
-      // } else {
-      //     console.log("false");
-      // }
+   //    // if (null == true) {
+   //    //     console.log("true");
+   //    // } else {
+   //    //        //false
+   //    //     console.log("false");
+   //    // }
+   //    ////------------------------------------------
 
-   ]
+   // ],
+   // [
+   //    `if (null == undefined) {<br>
+   //  &ensp; console.log("true");<br>
+   // } else {<br>
+   //  &ensp; console.log("false");<br>
+   // }`,
+   //    () => {
+   //       radioButtons.setRadioButton("true", "false", "else")
+   //    },
+   //    [true, false, false]
+   //    // if (null == undefined) {
+   //    //     //true
+   //    //     console.log("true");
+   //    // } else {
+   //    //     console.log("false");
+   //    // }
+
+   // ]
 
 ]

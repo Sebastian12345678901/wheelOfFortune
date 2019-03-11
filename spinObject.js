@@ -52,6 +52,7 @@ spinObject = {
     },
     //firstSpeedOf the wheel.
     startSpin: function (randomDegre) {
+        questions.i = 0;
 
         if (this.isSpinning == false) {
             this.isSpinning = true;

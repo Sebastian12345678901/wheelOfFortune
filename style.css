@@ -26,9 +26,9 @@ a {
     height: 7px;
     padding: 0%;
     margin: 0%;
-
-
 }
+
+
 
 
 .submit-button {
@@ -39,8 +39,8 @@ a {
     border-style: outset;
     border-color: darkred;
     border-width: 3px;
-    margin-left: 5px;
-    margin-top: 5px;
+    margin-right: 21%;
+    margin-top: 10px;
     text-align: center;
     font-size: 1.5em;
 
@@ -59,10 +59,12 @@ a {
 
 #points {
     color: green;
+    font-size: 2em;
 }
 
 #missed {
     color: red;
+    font-size: 2em;
 }
 
 #paper {
@@ -72,8 +74,8 @@ a {
     background-size: cover;
     float: right;
     width: 35%;
-    height: 83.2vh;
-    margin-top: 8vh;
+    height: 86.5vh;
+    margin-top: 5vh;
     margin-right: 10%;
     padding: 2%;
 }
@@ -87,7 +89,6 @@ a {
     width: 24%;
     top: 34%;
     left: 11.5%;
-    /* display: none; */
 }
 
 #backGroundWheel {
@@ -118,4 +119,14 @@ a {
 hr {
     color: black;
 
+}
+
+.container {
+    z-index: 10;
+    display: inline-block;
+    width: 6%;
+    height: 13px;
+    background-image: url("./images/unchecked.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
