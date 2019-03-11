@@ -1,54 +1,121 @@
-body{
+body {
     background-image: url("./images/backGround.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Comic Sans MS;
+    margin: 0;
+
 }
-#paper{
+
+hr {
+    background-color: brown;
+    border-color: brown;
+}
+
+audio {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.radio {
+    width: 7%;
+    height: 7px;
+    padding: 0%;
+    margin: 0%;
+
+
+}
+
+
+.submit-button {
+    display: inline-block;
+    width: 25%;
+    height: 10px;
+    background-color: brown;
+    border-style: outset;
+    border-color: darkred;
+    border-width: 3px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+
+
+#subject {
+    text-align: center;
+}
+
+
+#pointsDiv {
+    text-align: center;
+}
+
+#points {
+    color: green;
+}
+
+#missed {
+    color: red;
+}
+
+#paper {
+    font-size: 0.3em;
     background-image: url("./images/paper.svg");
     background-repeat: no-repeat;
     background-size: cover;
     float: right;
-    width: 25%;
-    height: 60vh;
-    margin-top: 25vh;
-    margin-right: 5%;
+    width: 35%;
+    height: 83.2vh;
+    margin-top: 8vh;
+    margin-right: 10%;
     padding: 2%;
 }
 
-
-
-#wheelOfFortune{
-    position: absolute;
-    width: 30%;
-    top: 35%;
-    left: 12%;
+#radioDiv {
+    /* display: none; */
 }
 
-#backGroundWheel{
+#wheelOfFortune {
     position: absolute;
-    width: 37%;
+    width: 24%;
+    top: 34%;
+    left: 11.5%;
+    /* display: none; */
+}
+
+#backGroundWheel {
+    position: absolute;
+    width: 30%;
     top: 28%;
     left: 8.5%;
 }
 
-#sign{
+#sign {
     display: block;
     position: absolute;
-    width: 33%;
-    margin-left: 33%;
-    
+    margin-top: 3px;
+    width: 40%;
+    margin-left: 5%;
+
 }
 
-#arrow{
+#arrow {
     z-index: 1;
     position: absolute;
-    left: 41%;
-    top: 63%;
-    width: 10%;
+    left: 34.8%;
+    top: 61%;
+    width: 8%;
 
 }
 
-hr{
+hr {
     color: black;
 
 }

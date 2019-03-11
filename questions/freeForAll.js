@@ -92,7 +92,6 @@ let freeForAll = [
     &ensp;&ensp;        return this.x + 5; <br>
     &ensp;    } <br>
     } <br>
-     <br>
     let objectTwo = { <br>
     &ensp;    y: 5, <br>
     &ensp;    myMethod: function () { <br>
@@ -100,7 +99,6 @@ let freeForAll = [
     &ensp;&ensp;        return this.y + 5; <br>
     &ensp;    } <br>
     } <br>
-     <br>
     let objectThree = { <br>
     &ensp;    z: 0, <br>
     &ensp;    myMethod: function () { <br>
@@ -112,7 +110,6 @@ let freeForAll = [
     &ensp;        } <br>
     &ensp;    } <br>
     } <br>
-     <br>
     console.log(objectThree.myMethod());`,
         () => {
             radioButtons.setRadioButton("30", "40", "20")

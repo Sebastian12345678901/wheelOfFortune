@@ -23,6 +23,7 @@ spinObject = {
     },
     //get one slice of the wheel.
     getSubject: function (degrees) {
+        console.log(this.subject);
         if (degrees % 360 < 45) {
             this.subject = "ifElse";
             questions.setSubeject(this.subject);
@@ -51,16 +52,19 @@ spinObject = {
     },
     //firstSpeedOf the wheel.
     startSpin: function (randomDegre) {
+
         if (this.isSpinning == false) {
             this.isSpinning = true;
             let maxSpeed = setInterval(() => {
                 document.getElementById("wheelOfFortune").style.transform = `rotate(${
+                    
           spinObject.i
         }deg)`;
-                spinObject.i += 1;
+
+                spinObject.i += 2;
                 //moves the arrow up and down when it hits a spike.
                 spinObject.moveArrow(spinObject.i);
-
+                document.getElementById("click").play();
                 //Changes the image so that the lights twinkle.
                 if (spinObject.i % 200 < 100) {
                     document.getElementById("backGroundWheel").src =
@@ -68,9 +72,10 @@ spinObject = {
                 } else {
                     document.getElementById("backGroundWheel").src =
                         "./images/backGroundWheel2.svg";
+
                 }
 
-                if (spinObject.i > 250 + randomDegre / 4) {
+                if (spinObject.i > 250) {
                     clearInterval(maxSpeed);
                     //second speed of the wheel
                     let midSpeed = setInterval(() => {
@@ -83,6 +88,9 @@ spinObject = {
                         if (spinObject.i % 200 < 100) {
                             document.getElementById("backGroundWheel").src =
                                 "./images/backGroundWheel.svg";
+
+
+
                         } else {
                             document.getElementById("backGroundWheel").src =
                                 "./images/backGroundWheel2.svg";
@@ -90,7 +98,7 @@ spinObject = {
 
                         spinObject.i += 1;
 
-                        if (spinObject.i > 750 + randomDegre / 4) {
+                        if (spinObject.i > 400) {
                             clearInterval(midSpeed);
                             //third speed of the wheel
                             let midSlowSpeed = setInterval(() => {
@@ -110,7 +118,8 @@ spinObject = {
                                 ).style.transform = `rotate(${spinObject.i}deg)`;
                                 spinObject.i += 1;
 
-                                if (spinObject.i > 1000 + randomDegre / 4) {
+                                if (spinObject.i > 500) {
+
                                     clearInterval(midSlowSpeed);
                                     //Fourth and slowest speed of the wheel
                                     let SlowSpeed = setInterval(() => {
@@ -131,8 +140,13 @@ spinObject = {
                                         ).style.transform = `rotate(${spinObject.i}deg)`;
                                         spinObject.i += 1;
 
-                                        if (spinObject.i > 1250 + randomDegre / 4) {
+                                        if (spinObject.i > 600 + randomDegre / 2) {
+                                            //click stands for click sound
+                                            document.getElementById("click").pause();
+                                            document.getElementById("click").currentTime = 0;
+
                                             clearInterval(SlowSpeed);
+                                            spinObject.i += randomDegre;
                                             spinObject.getSubject(spinObject.i);
 
                                             spinObject.i = 0;

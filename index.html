@@ -18,19 +18,73 @@
     <img id="wheelOfFortune" src="./images/wheelOfFortune.svg" alt="Wheel of fortune">
 
     <div id="paper">
+        <div id="subject">
+            <h1>
+                Spin the wheel to get a subject!<br>
+            </h1>
+        </div>
+        <div id="pointsDiv">
+            <em id="points">
+                points:
+            </em>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <em id="missed">
+                missed:
+            </em>
+            <hr>
+        </div>
+
+        <audio controls id="click">
+            <source src="sounds/Game Show Wheel Spin-SoundBible.com-1305738466.mp3" type="audio/mpeg">
+        </audio>
+
         <div id="paperContent">
 
         </div>
 
         <div>
+            <!-- <label class="container">One
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Two
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Three
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Four
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label> -->
 
-            <input id="radio1" onclick="radioButtons.clickRaidoButtonA()" type="radio" name="answer" value="a">
-            <em id="radioContent1"></em> <br>
-            <input id="radio2" onclick="radioButtons.clickRaidoButtonB()" type="radio" name="answer" value="b">
-            <em id="radioContent2"></em><br>
-            <input id="radio3" onclick="radioButtons.clickRaidoButtonC()" type="radio" name="answer" value="c">
-            <em id="radioContent3"></em><br>
-            <Button onclick="radioButtons.submit()">Submit</Button>
+
+
+
+            <div id="radioDiv">
+                <label>
+                    <input id="radio1" type="checkbox" class="radio" onclick="radioButtons.clickRaidoButtonA()" type="radio"
+                        name="answer" value="a">
+                    <em id="radioContent1"></em>
+                </label>
+                <label>
+                    <input id="radio2" type="checkbox" class="radio" onclick="radioButtons.clickRaidoButtonB()" type="radio"
+                        name="answer" value="b">
+                    <em id="radioContent2"></em>
+                </label>
+                <label>
+                    <input id="radio3" type="checkbox" class="radio" onclick="radioButtons.clickRaidoButtonC()" type="radio"
+                        name="answer" value="c">
+                    <em id="radioContent3"></em>
+                </label>
+                <br>
+
+                <em class="submit-button" onclick="radioButtons.submit()">Submit</em>
+
+                <a class="submit-button" target="blank" id="link" href="https://www.w3schools.com/js/default.asp">Help</a>
+
+            </div>
 
         </div>
     </div>
