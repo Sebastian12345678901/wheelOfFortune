@@ -1,7 +1,10 @@
 spinObject = {
+    //is the current twist of the wheel in degrees.
     i: 0,
     subject: "none",
     isSpinning: false,
+
+    //is used to chose a subject and move the wheel to a different position.
     randomDegre: function () {
         return Math.floor(Math.random() * 361);
     },
@@ -21,7 +24,7 @@ spinObject = {
             spinObject.moveArrowUp();
         }
     },
-    //get one slice of the wheel.
+    //get one slice of the wheel and the subject associated with it.
     getSubject: function (degrees) {
         console.log(this.subject);
         if (degrees % 360 < 45) {
@@ -50,12 +53,15 @@ spinObject = {
             questions.setSubeject(this.subject);
         }
     },
-    //firstSpeedOf the wheel.
+    //Starts the wheel when u click the arrow and iniates 4 set interval with 4 speeds.
     startSpin: function (randomDegre) {
+        //quesitons i keeps track of wich question is currently beeing called
         questions.i = 0;
 
+        //Is spinning makes it so that you cannot click the spin arrow while the wheel is active. 
         if (this.isSpinning == false) {
             this.isSpinning = true;
+            //first interval 
             let maxSpeed = setInterval(() => {
                 document.getElementById("wheelOfFortune").style.transform = `rotate(${
                     
@@ -65,6 +71,7 @@ spinObject = {
                 spinObject.i += 2;
                 //moves the arrow up and down when it hits a spike.
                 spinObject.moveArrow(spinObject.i);
+                //starts the sound of the spikes.
                 document.getElementById("click").play();
                 //Changes the image so that the lights twinkle.
                 if (spinObject.i % 200 < 100) {
@@ -85,7 +92,7 @@ spinObject = {
                         ).style.transform = `rotate(${spinObject.i}deg)`;
                         //moves the arrow up and down when it hits a spike.
                         spinObject.moveArrow(spinObject.i);
-                        //Changes the image so that the lights twinkle.
+                        //Changes the image so that the lights twinkle every 200 degrees.
                         if (spinObject.i % 200 < 100) {
                             document.getElementById("backGroundWheel").src =
                                 "./images/backGroundWheel.svg";

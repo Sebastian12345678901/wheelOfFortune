@@ -1,11 +1,21 @@
-body {
-    background-image: url("./images/backGround.svg");
-    background-repeat: no-repeat;
+html {
+    background: url(images/backGround.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+}
+
+body {
+    /* background-image: url("./images/backGround.svg");
+    background-repeat: no-repeat;
+    background-size: cover; */
     font-family: Comic Sans MS;
     margin: 0;
-
+    font-size: 2.5em;
 }
+
+
 
 hr {
     background-color: brown;
@@ -34,7 +44,7 @@ a {
 .submit-button {
     display: inline-block;
     width: 25%;
-    height: 10px;
+    height: 27px;
     background-color: brown;
     border-style: outset;
     border-color: darkred;
@@ -73,8 +83,8 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     float: right;
-    width: 35%;
-    height: 86.5vh;
+    width: 32%;
+    height: 84.5vh;
     margin-top: 5vh;
     margin-right: 10%;
     padding: 2%;
@@ -121,12 +131,259 @@ hr {
 
 }
 
+/* checkbox */
 .container {
     z-index: 10;
     display: inline-block;
     width: 6%;
-    height: 13px;
+    height: 30px;
     background-image: url("./images/unchecked.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+
+@media only screen and (min-width: 2550px) {
+    body {
+        font-size: 4.5em;
+    }
+
+    .submit-button {
+        height: 50px;
+    }
+
+    /* checkbox */
+    .container {
+        z-index: 10;
+        display: inline-block;
+        width: 7%;
+        height: 60px;
+        background-image: url("./images/unchecked.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #arrow {
+        z-index: 1;
+        position: absolute;
+        left: 34.3%;
+        top: 58%;
+        width: 8%;
+    }
+
+    #paper {
+        font-size: 0.3em;
+        background-image: url("./images/paper.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+        width: 35%;
+        height: 80.5vh;
+        margin-top: 8vh;
+        margin-right: 8%;
+        padding: 2%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1450px) {
+    body {
+        font-size: 2em;
+
+    }
+
+    .submit-button {
+        height: 23px;
+    }
+
+    /* checkbox */
+    .container {
+        z-index: 10;
+        display: inline-block;
+        width: 5%;
+        height: 20px;
+        background-image: url("./images/unchecked.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    #paper {
+        font-size: 0.3em;
+        background-image: url("./images/paper.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+        width: 30%;
+        height: 73.5vh;
+        margin-top: 17vh;
+        margin-right: 8%;
+        padding: 2%;
+    }
+
+    #wheelOfFortune {
+        position: absolute;
+        width: 27%;
+        top: 31.5%;
+        left: 11.5%;
+    }
+
+    #backGroundWheel {
+        position: absolute;
+        width: 33%;
+        top: 25.5%;
+        left: 8.5%;
+    }
+
+    #arrow {
+        z-index: 1;
+        position: absolute;
+        left: 37.8%;
+        top: 55%;
+        width: 9%;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+
+    body {
+        font-size: 2.4em;
+
+    }
+
+    .submit-button {
+        height: 23px;
+    }
+
+    /* checkbox */
+    .container {
+        z-index: 10;
+        display: inline-block;
+        width: 5%;
+        height: 23px;
+        background-image: url("./images/unchecked.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    #paper {
+        font-size: 0.3em;
+        background-image: url("./images/paper.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+        width: 47%;
+        height: 80.5vh;
+        margin-top: 10vh;
+        margin-right: 3%;
+        padding: 2%;
+    }
+
+    #wheelOfFortune {
+        position: absolute;
+        width: 24%;
+        top: 35%;
+        left: 11.5%;
+    }
+
+    #backGroundWheel {
+        position: absolute;
+        width: 30%;
+        top: 30.5%;
+        left: 8.5%;
+    }
+
+    #arrow {
+        z-index: 1;
+        position: absolute;
+        left: 34.3%;
+        top: 51%;
+        width: 9%;
+    }
+
+    #sign {
+        top: 4%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    body {
+        font-size: 2.7em;
+
+    }
+
+    #sign {
+        top: 60px;
+        width: 50%;
+    }
+
+    .submit-button {
+        height: 23px;
+    }
+
+
+    /* checkbox */
+    .container {
+        z-index: 10;
+        display: inline-block;
+        width: 3.5%;
+        height: 20px;
+        background-image: url("./images/unchecked.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .submit-button {
+        height: 30px;
+    }
+
+    #paper {
+        font-size: 0.3em;
+        background-image: url("./images/paper.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+        width: 70%;
+        height: 65.5vh;
+        margin-top: 25vh;
+        margin-right: 9%;
+        padding: 5%;
+    }
+
+    #wheelOfFortune {
+        position: absolute;
+        width: 24%;
+        top: 5%;
+        left: 63%;
+    }
+
+    #backGroundWheel {
+        position: absolute;
+        width: 29%;
+        top: 3%;
+        left: 60.5%;
+    }
+
+    #arrow {
+        z-index: 1;
+        position: absolute;
+        left: 85.5%;
+        top: 13%;
+        width: 9%;
+    }
+}
+
+/* 
+ 1024 px 768
+ 1280 px 800 px 
+ 1360 px 768
+ 1366 px 768 px
+  */
